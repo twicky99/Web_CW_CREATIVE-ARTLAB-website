@@ -1,0 +1,163 @@
+/* The logo of the navigation bar */
+#navbar #logo {
+	padding-left: 20px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width: 175px;
+	height: 75px;
+	transition: 0.4s;
+}
+
+/* the navigation bar */
+#navbar {
+	background-color: #333;
+	padding: 8px 7px;
+	transition: 0.4s;
+	width: 98.9%;
+	height: 15%; 
+	z-index: 99;
+	opacity: 0.9;
+}
+
+#navbar a {
+	float: left;
+	color: white;
+	text-align: 14px 16px;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#navbar a:hover {
+	background-color: #ddd;
+	border-radius: 15px;
+	color: black;
+}
+
+#navbar-right {
+	float: right;
+	padding-top: 10px;
+	padding-right: 20px;
+}	
+
+.top-page{
+	margin-top: 5px;
+    margin-left: 96%;
+    position: fixed;
+}
+
+/*Styling the thumbnail holder*/
+#thumbnailsHolder {
+    width: 50%;
+    height: 100px;
+    background-color: white;
+    padding: 60px;
+    margin-left: 25%;
+    
+}
+
+/*Positioning the images*/
+#thumbnailsHolder > img {
+    height: 70px;
+    width: 80px;
+    display: block;
+    float: left;
+    box-shadow: 0 0 10px 5px #ccc;
+    margin: 20px;
+    transition: border-radius_0.3s lineae 0s;
+    transition-duration: 0.4s;
+}
+
+/*Creates the hover effect over the thumbnail images*/
+#thumbnailsHolder > img:hover {
+    cursor: pointer;
+      -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+/*Centers the main image*/
+main {
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+/*Styling the big image*/
+#Image1 {
+    box-shadow: 0 0 10px 2px #ccc;
+    border: 10px;
+    margin-left: 10%;
+    width: 80%;
+    height:auto:
+}
+
+/*Styling the image*/
+#heading {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    width: 100%;
+}
+
+/*Styling the heading*/
+h1 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 45px;
+    width: 750px;
+    padding: 10px;
+    margin: 3px;
+    width: 100%;
+}
+
+#Data{
+    padding: 10px;
+    width: 80%;
+    margin-left: 8%;
+}
+
+/*Paragraph spacing*/
+h3 {
+    line-height: 1.5;
+}
+
+/* fontSizer */
+div#fontSizer {
+    position: fixed;
+    z-index: 1;
+}
+
+
+.top-page{
+    font-size: 50px;
+}
+
+.top-page:hover {
+  background-color: skyblue;
+  border-radius: 50%;
+    height: 45px;
+}
+
+#footer {
+	width: 100%;
+	height: 145px;
+	background-color: #333;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	color: white;
+	text-align: center;
+	font-family: Helvetica;
+	opacity: 0.9;
+}
+#footer a{
+	color: white;
+	text-align: 10px 10px;
+	padding: 20px;
+	text-decoration: none;
+}		
+#footer a:hover{
+	background-color: #ddd;
+	border-radius: 15px;
+	color: black;
+}
+
+

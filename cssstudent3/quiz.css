@@ -1,0 +1,130 @@
+/* The logo of the navigation bar */
+#navbar #logo {
+	padding-left: 20px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width: 175px;
+	height: 75px;
+	transition: 0.4s;
+}
+
+/* the navigation bar */
+#navbar {
+	background-color: #333;
+	padding: 8px 7px;
+	transition: 0.4s;
+	width: 98.9%;
+	height: 15%; 
+	z-index: 99;
+	opacity: 0.9;
+}
+
+#navbar a.active {
+	background-color:#20b2aa;
+	color:#ffffff;
+	border-radius: 15px;
+}
+#navbar a {
+	float: left;
+	color: white;
+	text-align: 14px 16px;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 16px; 
+}
+
+#navbar a:hover {
+	background-color: #ddd;
+	border-radius: 15px;
+	color: black;
+}
+
+#navbar-right {
+	float: right;
+	padding-top: 10px;
+	padding-right: 20px;
+}	
+
+body{
+	background-image: url("../pics/artBG.jpg");
+	background-repeat: no-repeat;
+	background-position: absolute;
+	background-size: 135%;
+	background-attachment: fixed;
+}
+			
+legend {
+	font-family: 'Caveat', cursive;
+	text-align: center;
+	font-size: 48px;
+	color: #174999;
+}
+			
+fieldset {
+	border: 2px solid black;
+	border-radius: 5px;
+	color: #000000;				
+}
+			
+button {
+	background-color: black;
+	color: white;
+	border: 2px solid #e7e7e7;
+	padding: 5px;
+	text-align: center;
+	font-size: 14px;
+	transition-duration: 0.5s;
+	cursor: pointer;
+}
+			
+button:hover {
+	background-color: #174999;;
+}
+
+.info {
+	text-align: center;
+}
+
+.container{
+	background-color: #ecf7f9;
+	display:grid;
+	grid-template-columns:100%;
+	opacity: 0.78;	
+}
+			
+.question{
+	border: 1px solid black;
+	border-radius: 4px;
+	padding : 20px;
+}
+			
+.quizTimer {
+	text-align: center;
+	padding: 10px;
+	background-color: black;
+	color: white;
+}
+
+/*the footer*/
+#footer {
+	width: 100%;
+	height: 145px;
+	background-color: #333;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	color: white;
+	text-align: center;
+	font-family: Helvetica;
+	opacity: 0.9;
+}
+#footer a{
+	color: white;
+	text-align: 10px 10px;
+	padding: 20px;
+	text-decoration: none;
+}		
+#footer a:hover{
+	background-color: #ddd;
+	border-radius: 15px;
+	color: black;
+}

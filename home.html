@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="ExternalCSS.css">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Noto+Sans|Pacifico' rel='stylesheet' type='text/css'><link href='https://fonts.googleapis.com/css?family=Noto+Sans|Pacifico' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+
+	<script>
+	//Get the button
+	var mybutton = document.getElementById("scrollBtn");
+
+	// When the user scrolls down 30px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+	<!-- the header consists of navigation bar -->
+	<header>
+		<div id="navbar">
+		  <img id="logo" src="gallery/logo.jpg" alt="logo">
+			  <div id="navbar-right">
+				<a class="active" href="home.html"id="shift"><i class="fa fa-fw fa-home"> </i>HOME</a> 
+				<a href="gallery.html"><i class="fa fa-image"> </i>GALLERY</a> 
+				<a href="webQuiz.html"><i class="fa fa-edit"> </i>QUIZ</a> 
+				<a href="shop.html"><i class="fa fa-shopping-cart"> </i>SHOP</a> 
+				<a href="Site Map.html"><i class="fa fa-fw fa-map"> </i>SITE MAP</a> 
+				<a href="Comments form.html"><i class="fa fa-fw fa-envelope"> </i>SUPPORT</a>
+				<a href="webMembers.html"><i class="fa fa-user"> </i>ABOUT</a>
+				
+				
+				 
+					
+					
+				</div> 
+			  </div>
+		  </div>
+	</header>
+
+
+	 
+	<!-- background picture -->
+	<div class="backpic">
+		<div style="margin-top:65px;padding:0px 0px 250px;font-size:30px">
+		
+	<!-- image, topic and text on image -->	
+			<div class="container">
+				<img class="mySlides" src="gallery/art10.jpg" alt="art10">
+				<div id="textonimage">
+					<h1>Creative ArtLab </h1> 
+				</div>
+				<div class="content">
+					<h2>WELCOME</h2>
+					<p id="intro">'CREATIVE ARTLAB' has been promoting both local and  international drawings for local and foreign demand.Our well experienced and professionally qualified artists team will ensure that you get the best drawings to meet your requirements within your budgets.</p>
+				</div>
+			    <img class="mySlides" src="gallery/art21.jpg" alt="art21">
+				<img class="mySlides" src="gallery/art40.jpg" alt="art40">
+				<img class="mySlides" src="gallery/art11.jpg" alt="art11">
+				<img class="mySlides" src="gallery/art14.jpg" alt="art14">
+				<img class="mySlides" src="gallery/art13.jpg" alt="art13">
+				<img class="mySlides" src="gallery/art41.jpg" alt="art41">
+				<img class="mySlides" src="gallery/paint6.jpg" alt="paint6">
+				<img class="mySlides" src="gallery/paint3.jpg" alt="paint3">
+				
+			</div>
+		</div>
+
+
+
+	 
+		<script>
+			//javascript code to change the image with a time period of 7 seconds
+			var myIndex = 0;
+			slide();
+
+			function slide() {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			 
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}    
+			  x[myIndex-1].style.display = "block";  
+			  setTimeout(slide, 7000); // Change image every 7 seconds
+			  
+			  
+			}
+		</script>
+
+
+
+		<!-- section 1-->
+		<div class="section1">
+			<div class="container">
+				<div class="row">
+					<h2><b>WHY CHOOSE CREATIVE ARTLAB? </b></h2>
+						<div class="columnA">
+							<img id="imgmark" src="gallery/mark1.jpg" alt="mark1" width="120" height="80">
+							<h4>QUALITY</h4>
+							<p id="paramark">We are the No. 01 Arts Shop in Sri Lanka reputed for innovative designs,exquisite craftsmanship impeccable quality and real value for money.</p>
+						</div>
+						<div class="columnB">
+							<img src="gallery/mark2.jpg" id="imgmark" alt="mark2" width="120" height="80">
+							<h4>RELIABILITY</h4>
+							<p id="paramark">The products of Creative ArtLab mainly the handicraft products done in a minor scale undergo extensive quality assurance testing for validity and reliability</p>
+						</div>
+						<div class="columnC">
+							<img src="gallery/mark3.jpg" id="imgmark" alt="mark3"  width="120" height="80">
+							<h4>SERVICE</h4>
+							<p id="paramark">The products of Creative ArtLab are sourced from authentic artisans and artists who are very meticulous. </p>
+						</div>  
+			  
+				</div>
+			</div>
+		</div>
+			
+		
+		<!-- section 2-->	
+		<div class="section2">
+			<h5> What we do?</h5>
+			<p id="section2para">A wide range of drawings which suits both local and foreign demand is mainly designed by us.Various drawings related to sceneries,life, entertainment,confiscated,etc...are done by us . Pen,pencil,paint are used by us to do drawings.<br></br>
+			<br>In 2016, we design to move on Sri Lankan handicrafts too.Starting from 'Wooden Elephant' we were able to occupy a major place in handicraft industry as well .We mainly focus on drawings which has a high demand from tourists.<br> 
+			<br>Traditional carved masks with bright tropical colors is a much loved souvenir for any tourist visiting this wonderful island Sri Lanka.In Sri Lanka, masks are used for traditional low country dances (Southern regions of Sri Lanka)</br>.</p>
+		</div>
+			
+
+
+		<!-- button on the background -->
+		<div class="buttonmid">
+			<p id="buttonmidpara">Wanna Join and Try this Arts Quiz!!!<br></p>
+				<div class="container2x">
+					
+					<button id="myButton" class="button1" >GO TO QUIZ</button>
+						
+						<!-- to view the quiz -->
+						<script type="text/javascript">
+							document.getElementById("myButton").onclick = function () {
+								location.href = "webQuiz.html";
+							};
+						</script>
+				</div>
+		</div>
+
+		
+		<!-- the gallery divided by two coulmns -->
+		<div id="gallery">
+			<div class="row">
+				<div class="marqcolumnX">
+					Some of our featured drawings<br> & handicrafts<br>
+					<button id="myButton2" class="btn2"> VIEW MORE</button>
+					
+					<!-- to view the gallery -->
+						<script type="text/javascript">
+							document.getElementById("myButton2").onclick = function () {
+								location.href = "gallery.html";
+							};
+						</script>
+					
+					
+					
+				</div>
+				<div class="marqcolumnY">
+					<marquee behavior="scroll" direction="left" scrollamount="8">
+						<img id="marqueeimg" src="gallery/drawing1.jpg" alt="drawing1">
+						<img id="marqueeimg" src="gallery/drawing2..jpg" alt="drawing2.">
+						<img id="marqueeimg" src="gallery/painting1.jpg" alt="painting1">
+						<img id="marqueeimg" src="gallery/drawing4.jpg" alt="drawing4">
+						<img id="marqueeimg" src="gallery/drawing5.jpg" alt="drawing5">
+						<img id="marqueeimg" src="gallery/drawing6.jpg" alt="drawing6">
+						<img id="marqueeimg" src="gallery/drawing7.jpg" alt="drawing7">
+						<img id="marqueeimg" src="gallery/painting3.jpg" alt="painting3">
+						<img id="marqueeimg" src="gallery/painting4.jpg" alt="painting4">
+						<img id="marqueeimg" src="gallery/paint2.jpg" alt="painting5">
+						<img id="marqueeimg" src="gallery/painting2.jpg" alt="painting2">
+						<img id="marqueeimg" src="gallery/wooden1.jpg" alt="wooden1">
+						<img id="marqueeimg" src="gallery/wooden2.jpg" alt="wooden2">
+						<img id="marqueeimg" src="gallery/wooden3.jpg" alt="wooden3">
+						<img id="marqueeimg" src="gallery/wooden5.jpg" alt="wooden4">
+						
+					</marquee>
+				</div>
+			</div>
+		</div>
+			
+
+	</div>
+	<footer class="footer-distributed">
+		<div class="row">
+			<div class="footer-left">
+				<p class="footer-links">
+					<a href="home.html">Home</a>
+					|
+					<a href="gallery.html">Gallery</a>
+					|
+					<a href="webQuiz.html">Quiz</a>
+					|
+					<a href="Site Map.html">SiteMap</a>
+					|
+					<a href="Comments form.html">Feeback</a>
+					|
+					<a href="webMembers.html">About</a>
+				</p>
+				
+					<p class="footer-person-name">Creative ArtLab &copy; 2020<br><br>
+				<span><a href="tharinducv.html">Tharindu Wickramasinghe</a></span></p>
+				
+			</div>
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>&nbsp;
+					<span>Old Temples Rd</span><p> &nbsp;&nbsp;&nbsp;Dehiwala, Sri lanka</p>
+				</div>
+				<div><br>
+					<i class="fa fa-phone"></i>&nbsp;
+					+94 771974323
+				</div><br><br>
+				<div>
+					<i class="fa fa-envelope"></i>&nbsp;
+					<a href="artgalley@gmail.com">crtartlab@gmail.com</a>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span><strong>About the company</strong></span>
+				<p>We are the pioneers in Sri Lakan arts and crafts industry since 2002.Together our main aim is to protect Sri Lankan arts and craft industry which has been prevailed from ancient times to future generations as well.</p>
+				</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>&nbsp;
+					<a href="#"><i class="fa fa-twitter"></i></a>&nbsp;
+					<a href="#"><i class="fa fa-linkedin"></i></a>&nbsp;
+					<a href="#"><i class="fa fa-skype"></i></a>
+				</div>
+			</div>
+		</div>
+		
+		
+	</footer>
+
+</body>
+</html>
+
+

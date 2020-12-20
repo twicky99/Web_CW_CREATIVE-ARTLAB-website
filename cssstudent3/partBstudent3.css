@@ -1,0 +1,163 @@
+/* The logo of the navigation bar */
+#navbar #logo {
+	padding-left: 30px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width: 175px;
+	height: 75px;
+	transition: 0.4s;
+}
+
+/* the navigation bar */
+#navbar {
+	background-color: #333;
+	padding: 8px 10px;
+	transition: 0.4s;
+	width: 98%;
+	height: 15%; 
+	z-index: 99;
+	opacity: 0.9;
+}
+
+#navbar a {
+	float: left;
+	color: white;
+	text-align: 14px 16px;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#navbar a:hover {
+	background-color: #ddd;
+	border-radius: 15px;
+	color: black;
+}
+
+#navbar-right {
+	float: right;
+	padding-top: 10px;
+	padding-right: 20px;
+}
+
+.main-area {
+	width: 1200px;
+    padding: 20px;
+	display: grid;
+	color: #000000;
+	border-radius: 5px;
+    border: 2px solid black;
+	background-color: #31708E;
+	grid-template-columns: 34% 66%;
+	grid-gap: 10px;
+}
+
+.header {
+	width: 1200px;
+	min-height: 100px;
+	grid-column: 1/ span 2;
+	background-color: #8FC1E3;
+}
+
+.description {
+	font-family: 'Caveat', cursive;
+	font-size: 40px;
+	text-align: center;
+}
+
+.description1 {
+	font-family: 'Caveat', cursive;
+	font-size: 40px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.S-Img{
+	margin: 10%;
+	margin-left: 8.5%;
+	margin-top: %;
+	border: 2px solid black;
+	border-radius: 5px;
+	color: #000000;
+}
+
+.S-Description {
+    background-color: #5AB9EA;
+	margin-right: 1.3%;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: justify;
+	padding-bottom: 30px;
+}
+
+.SF-Img{
+	margin: 5%;
+	margin-left: 17%;
+	border: 2px solid black;
+	border-radius: 5px;
+	color: #000000;
+}
+
+.SF-Description {
+    background-color: #84CEEB;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: justify;
+}
+
+.SR-Img{
+	margin: 10%;
+	margin-left: 8.5%;
+	border: 2px solid black;
+	border-radius: 5px;
+	color: #000000;
+}
+
+.SM-Description {
+    background-color: #5AB9EA;
+	padding-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: justify;
+	grid-column: 2;
+}
+
+.SR-Description {
+    background-color: #5AB9EA;
+	padding-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: justify;
+}
+
+.SS-Description {
+    background-color: #5AB9EA;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: justify;
+	grid-column: 2;
+}
+
+/*the footer*/
+#footer {
+	width: 100%;
+	height: 145px;
+	background-color: #333;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	color: white;
+	text-align: center;
+	font-family: Helvetica;
+	opacity: 0.9;
+}
+#footer a{
+	color: white;
+	text-align: 10px 10px;
+	padding: 20px;
+	text-decoration: none;
+}		
+#footer a:hover{
+	background-color: #ddd;
+	border-radius: 15px;
+	color: black;
+}

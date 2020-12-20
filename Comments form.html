@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<title>Form</title>
+	</head>
+	<style>
+			*{box-sizing: border-box;}
+			body{
+				font-family:Arial,Lucida Casual,sans-serif;
+				margin:0;
+			}
+			
+			
+			/* css for logo of the navigation bar */
+			#navbar #logo {
+				padding-left:20px;
+				padding-bottom:8px;
+				width:270px;
+				height:100px;
+				transition:0.4s;
+			}
+
+			/* the navigation bar */
+			#navbar {
+				overflow: hidden;
+				background-color:black;
+				padding: 15px 8px;
+				transition: 0.4s;
+				position: fixed;
+				width: 100%;
+				height:18%; 
+				top: 10;
+				z-index: 99;
+			}
+
+			#navbar a {
+				float: left;
+				color: #f08080;
+				font-weight:bold;
+				text-align: center;
+				padding: 20px;
+				text-decoration: none;
+				font-size: 16px; 
+				line-height: 25px;
+			}
+			#navbar a.active {
+				background-color:#20b2aa;
+				color:#ffffff;
+				border-radius: 15px;
+			}
+
+			#navbar a:hover {
+				color:#8b4513;
+				background-color:white;
+				border-radius:10px;
+				color:blue;
+			}
+
+			#navbar-right {
+				float: right;
+				padding-top:5px;
+			}	
+
+			/*to give a padding to the home button in the navigation bar*/
+			#shift {
+				padding-left:20px;
+			}
+			
+			
+			h2{
+				font-family: Helvetica;
+				font-size: 30px;
+				text-align: center;
+			}
+			h4{
+				
+				font-family:"Lucida Console", Monaco, monospace; 
+				font-size:22px; 
+				margin-left: 20px;
+				color:white;
+			}
+
+
+			section{
+				width:100%;
+				height: 1000px;
+				box-shadow: 0 0 10px 2px #ccc;
+				padding: 1rem 0;
+				width: 80%;
+				margin: 2rem auto;
+				background-color: #ccc;
+			}
+
+			/* css for textarea to input text */
+			
+			input[type=text], select, textarea{
+				width:100%;
+				padding: 13px;
+				border: 1px solid #ccc;
+				border-radius:4px;
+				box-sizing:border-box;
+				margin-top:5px;
+				margin-bottom:12px;
+				resize:vertical;
+			}
+			
+			.container{
+				border-radius: 4px;
+				width:80%;
+				margin:auto;
+				background:linear-gradient(to left, #00008b 4%, #add8e6 87%);
+				padding: 7px;
+			}
+			
+			/* css for submit button */
+			input[type=submit] {
+				background-color:white;
+				color:blue;
+				padding: 13px 19px;
+				font-weight:bold;
+				border-color: black;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+			
+			
+			input[type=submit]:hover {
+				background-color:black;
+				color: white;
+				padding: 13px 19px;
+				border:none;
+				border-radius: 9px;
+				cursor: pointer;
+			}
+			
+			/* css for reset button */
+			input[type=reset] {
+				background-color:white;
+				color: blue;
+				font-weight:bold;
+				padding: 13px 19px;
+				border-color: black;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+			
+			input[type=reset]:hover {
+				background-color:black;
+				color: white;
+				padding: 13px 19px;
+				border: none;
+				border-radius: 9px;
+				cursor: pointer;
+			}
+			
+			content { 			
+				width: 250px;			
+				background-color: white;			
+				padding: 10px 0 10px 5px;
+				margin-left: 10px;			
+				border: 1px solid black;		
+			}		
+
+			font { 			
+				height: 60px; 			
+				padding: 0;			
+				margin: 0;		
+			}		
+
+			p { 
+				display: inline-block; 
+			}
+					
+			#font-size { 
+				margin: 0 5px; 
+			}		
+
+			button { 			
+				width: 30px;			
+				height: 30px;	
+			}		
+					
+			
+			
+			#container0{
+				margin-top:50px;
+				background-image: url("gallery/presentation-page-background.jpg");
+			}
+
+			.row:after {
+			
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			.columnA{
+				float:left;
+				width:33.33%;
+				
+			}
+			.columnB{
+				margin-top:100px;
+				float:right;
+				width:66.66%;
+			}
+			
+			
+			#footer {
+				width: 100%;
+				height: 145px;
+				background-color: #333;
+				padding-top: 20px;
+				padding-bottom: 15px;
+				color: white;
+				text-align: center;
+				font-family: Helvetica;
+				opacity: 0.9;
+			}
+			#footer a{
+				color: white;
+				text-align: 10px 10px;
+				padding: 20px;
+				text-decoration: none;
+			}		
+			#footer a:hover{
+				background-color: #ddd;
+				border-radius: 15px;
+				color: black;
+			}
+	
+	</style>
+	
+	<script>
+	    function validateForm() {
+		<!--creating variables-->
+		
+			  var firstName = document.forms["myForm"]["firstName"].value;
+			  var lastName = document.forms["myForm"]["lastName"].value;
+			  var rating = document.forms["myForm"]["rating"].value;
+			  var comment = document.forms["myForm"]["subject"].value;
+			  
+			  <!--validation-->
+			  
+			 
+						if( comment != "" ) {
+							comment = " and your comment was " + comment;
+						} else {
+							comment = "";
+						}
+						
+			  
+			  
+			  if(firstName == ""){
+				alert("Please Enter your First name!");
+				return false;
+			  
+			  } else if(lastName == ""){
+				alert("Please Enter your Last name!");
+				return false;
+				
+			  } else if((myForm.rating[0].checked ==  false) && (myForm.rating[1].checked ==  false) && (myForm.rating[2].checked ==  false) &&
+			  (myForm.rating[3].checked ==  false)){
+				alert("Please rate our website");
+				return false;
+			  } else {
+				alert("Dear "+firstName+" , Thank you very much for your feedback. You have rated our site as "+rating+comment);
+			  }
+		  
+		}
+		
+	</script>
+	
+	
+	
+	
+	<body>
+	
+		<!-- the navigation bar -->
+		<header>
+			<div id="navbar">
+			  <img id="logo" src="gallery/logodark.png" alt="logo1">
+				  <div id="navbar-right">
+					<a href="home.html"id="shift"><i class="fa fa-fw fa-home"> </i>HOME</a> 
+					<a href="gallery.html"><i class="fa fa-image"> </i>GALLERY</a> 
+					<a href="webQuiz.html"><i class="fa fa-edit"> </i>QUIZ</a> 
+					<a href="shop.html"><i class="fa fa-shopping-cart"> </i>SHOP</a>
+					<a href="Site Map.html"><i class="fa fa-fw fa-map"> </i>SITE MAP</a> 
+					<a class="active" href="Comments form.html"><i class="fa fa-fw fa-envelope"> </i>SUPPORT</a>
+					<a href="webMembers.html"><i class="fa fa-user"> </i>ABOUT</a>
+				  </div>
+			  </div>
+		</header>
+		<br>
+		<br>
+		
+			
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		
+
+			
+		<div id="container0">
+			<div class="row">
+				<div class="columnA">
+				
+				
+				</div>
+				<div class="columnB">
+					
+					<form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+						<h4>Leave us a Comment...</h4>
+						
+						<div class="container">
+							<label for="firstName"><b>First Name* :</b></label>
+							<input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+							<br>
+							<label for="lastName"><b>Last Name* :</b></label>
+							<input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+							<br>
+							<b>Telephone Number:</b>
+							<input type="text" id="telNumber">
+							<br>
+							<b>Email Adress:</b>
+							<input type="text" id="email">
+							<br>
+							<!--Rating the website-->
+							<b>Rate us* :</b><br>
+							<input type="radio" name="rating" value="excellent">Excellent
+							<input type="radio" name="rating" value="good">Good
+							<input type="radio" name="rating" value="average">Average
+							<input type="radio" name="rating" value="poor">Poor<br>
+							<br>
+							<label for="subject"><b>Comments:</b></label>
+							<textarea id="subject" name="subject" placeholder="Any comments.." style="height:200px"></textarea>
+							<input type="submit" value="Submit"> <span> </span>
+							<input type="reset" value="Reset">
+						</div><br><br>	
+					</form>
+						
+				</div>
+				
+			</div>
+		</div>
+	
+	
+		<footer id="footer">
+				
+					<p><a href="home.html">Home</a>
+					|  <a href="gallery.html">Gallery</a>  
+					|  <a href="shop.html">Store</a>  
+					|  <a href="webQuiz.html">Quiz</a>  
+					|  <a href="Comments form.html">Feedback</a>  
+					|  <a href="webMembers.html">About Us</a><br><br>
+					<span>   Creative ArtLab &copy; 2020 </span><br><br>
+					  <a href="tharinducv.html"> Tharindu Wickramasinghe </a></p>
+				
+		
+		</footer>
+	</body> 	
+</html>
+		
+
+    

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#000000">
+	<title>Shop | Creative ArtLab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="cssstudent1/base.css">
+</head>
+<body id="root">
+	<!--Overlay of the page -->
+	
+	<header>
+		<div id="navbar">
+		  <img id="logo" src="images/logo.png" alt="logo1">
+			  <div id="navbar-right">
+				<a href="home.html" id="shift"><i class="fa fa-fw fa-home"> </i>HOME</a> 
+				<a href="gallery.html"><i class="fa fa-image"> </i>GALLERY</a> 
+				<a href="webQuiz.html"><i class="fa fa-edit"> </i>QUIZ</a> 
+				<a class="active" href="#"><i class="fa fa-shopping-cart"> </i>SHOP</a> 
+				<a href="Site Map.html"><i class="fa fa-fw fa-map"> </i>SITE MAP</a> 
+				<a href="Comments form.html"><i class="fa fa-fw fa-envelope"> </i>SUPPORT</a>
+				<a href="webMembers.html"><i class="fa fa-user"> </i>ABOUT</a>
+			  </div>
+		  </div>
+	</header>
+
+	<div class="backpic">
+	<div class="container">
+		
+		<div class="shop-section">
+			
+			<div class="shop-items">
+				
+				<div class="shop-item">
+					<div class="card">
+						<img src="images/shop-items/mask.jpg" alt="Product Image">
+						<div class="inner-text">
+							<h4><b id="mask-title">Yaka Mask</b></h4>
+							<p>Traditional Sri Lankan Wood<br>Crafted Mask</p>
+							<p class="price">$20.00</p>
+							<p><span id="mask-qty">5</span> units available</p>
+							<p>Quantity
+								<input type="text" id="mask" onkeypress="numberTypeValidate(event)" name="qty" value="1" maxlength="2" size="2">
+							</p>
+							<p><button onClick="addToCart(19.00, 'mask')">Add to Cart</button></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="shop-item">
+					<div class="card">
+						<img src="images/shop-items/elephant.jpg" alt="Product Image">
+						<div class="inner-text">
+							<h4><b id="elephant-title">Wood Elephant</b></h4>
+							<p>Traditional Sri Lankan Wood Crafted<br>Elephant Statue</p>
+							<p class="price">$30.00</p>
+							<p><span id="elephant-qty">8</span> units available</p>
+							<p>Quantity
+								<input type="text" id="elephant" onkeypress="numberTypeValidate(event)" name="qty" value="1" maxlength="2" size="2">
+							</p>
+							<p><button onClick="addToCart(30.00, 'elephant')">Add to Cart</button></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="shop-item">
+					<div class="card">
+						<img src="images/shop-items/shirt.jpg" alt="Product Image">
+						<div class="inner-text">
+							<h4><b id="shirt-title">Creative ArtLab T-Shirt</b></h4>
+							<p>Official Creative ArtLab T-Shirt<br>(Gender Natural)</p>
+							<p class="price">$9.99</p>
+							<p><span id="shirt-qty">50</span> units available</p>
+							<p>Size
+								<input type="radio" name="tsize" id="tsize-s" value="s" checked/> S
+								<input type="radio" name="tsize" id="tsize-m" value="m"/> M
+								<input type="radio" name="tsize" id="tsize-l" value="l"/> L
+								<input type="radio" name="tsize" id="tsize-xl" value="xl"/> XL
+								<input type="radio" name="tsize" id="tsize-2xl" value="2xl"/> 2XL
+							</p>
+							<p><button onClick="addToCartShirt(9.99, 'shirt')">Add to Cart</button></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="shop-item">
+					<div class="card">
+						<img src="images/shop-items/mug.jpg" alt="Product Image">
+						<div class="inner-text">
+							<h4><b id="mug-title">Creative ArtLab Mug</b></h4>
+							<p>Official Creative ArtLab Mug (White)</p>
+							<p class="price">$5.99</p>
+							<p><span id="mug-qty">8</span> units available</p>
+							<p>Quantity
+								<input type="text" id="mug" onkeypress="numberTypeValidate(event)" name="qty" value="1" maxlength="2" size="2">
+							</p>
+							<p><button onClick="addToCart(5.99, 'mug')">Add to Cart</button></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="shop-item">
+					<div class="card">
+						<img src="images/shop-items/paintings.jpg" alt="Product Image">
+						<div class="inner-text">
+							<h4><b id="paint-title">Tropical Montage Oil Painting Set</b></h4>
+							<p>Painting set by Kristin Cronic</p>
+							<p class="price">$775.00</p>
+							<p><span id="paint-qty">2</span> units available</p>
+							<p>Quantity
+								<input type="text" id="paint" onkeypress="numberTypeValidate(event)" name="qty" value="1" maxlength="2" size="2">
+							</p>
+							<p><button onClick="addToCart(775.00, 'paint')">Add to Cart</button></p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="tool-box">
+				<div class="total-price-view">Total | $<span id="total-price">0.00</span></div>
+				<table id="cart-views">
+					<tr class="text-bold"><td>#</td><td>Product Name</td><td>Price Per Unit</td><td>Quantity</td><td>Sub Total</td></tr>
+				</table>
+				<form class="order-form">
+					<p class="page-title"><strong>Order Details</strong></p>
+					
+					<label for="cus-name">Full Name </label>
+					<input type="text" id="cus-name" placeholder="John Doe">
+					
+					<label for="cus-number">Mobile Number </label>
+					<input type="text" id="cus-number" onKeyPress="" placeholder="071 234 5678">
+					
+					<label for="cus-email">Email </label>
+					<input type="text" id="cus-email" placeholder="johndoe@sample.com">
+					
+					<label for="cus-address-1">Address </label>
+					<input type="text" id="cus-address-1" placeholder="12 sesame Street">
+					<input type="text" id="cus-address-2" placeholder="Atlantis City">
+					<input type="text" id="cus-address-3" placeholder="Atlantis">
+					
+					<label for="cus-email">Payment Option </label>
+					<input type="radio" name="cus-pay" value="card" checked> Credit/Debit Card
+					<input type="radio" name="cus-pay" value="paypal"> Paypal
+				</form>
+				<button class="btn-place" onBlur="makeTheOrder()">Place Order</button>
+				<button class="btn-reset" onClick="location.reload()">Cancel Order</button>
+			</div>
+			
+		</div>
+		
+		<div class="size-changer">
+			Font Size 
+			<span id="txt-font-size"></span>px 
+			<button onClick="changeFont(1)">&#10133;</button>
+			<button onClick="changeFont(-1)">&#10134;</button>
+		</div>
+		
+	
+	
+	<!-- Java Script Code -->
+	<script type="text/javascript">
+		var totalPrice = document.getElementById("total-price");
+		var cartCount = 0;
+		var cart = {};
+		
+		var fontSizeTxt = document.getElementById("txt-font-size");
+		function setCurrentFontSize(){
+			var root = document.getElementById('root');
+			var rootStyle = window.getComputedStyle(root, null).getPropertyValue('font-size');
+			var fontSize = parseFloat(rootStyle);
+			fontSizeTxt.innerHTML = fontSize;
+		}
+		
+		setCurrentFontSize();
+		
+		function numberTypeValidate(evt){
+			var theEvent = evt || window.event;
+			
+			if (theEvent.type === 'paste') {
+				key = event.clipboardData.getData('text/plain');
+			} else {
+				var key = theEvent.keyCode || theEvent.which;
+				key = String.fromCharCode(key);
+			}
+			var regex = /[0-9]|\./;
+			if( !regex.test(key) ) {
+				theEvent.returnValue = false;
+				if(theEvent.preventDefault){
+					theEvent.preventDefault();
+				}
+			}
+		}
+		
+		function addToCart(xprice, xid){
+			var price = parseFloat(xprice);
+			
+			var inpField = document.getElementById(xid);
+			var rqtyField = document.getElementById(xid+"-qty");
+			
+			var selQty = parseInt(inpField.value);
+			var realQty = parseInt(rqtyField.innerHTML);
+			
+			if(realQty===0){
+				alert("Out of stock!");
+			}else{
+				if(selQty<=realQty){
+					var pandp = xid+"#"+selQty+"#"+price;
+					var updatedQty = realQty-selQty;
+					var newTotalPrice = (parseFloat(totalPrice.innerHTML)+(price*selQty)).toFixed(2);
+					
+					cartCount++;
+					totalPrice.innerHTML = newTotalPrice;
+					cart[cartCount] = pandp;
+					rqtyField.innerHTML = updatedQty;
+					addRowToCart(xid, cartCount, selQty, price, "");
+					alert("Added to the cart!")
+				}else{
+					alert("Out of quntity!");
+				}
+			}
+		}
+		
+		function addToCartShirt(xprice, xid){
+			var price = parseFloat(xprice);
+			var size = document.querySelector("input[name='tsize']:checked").value;
+			var rqtyField = document.getElementById(xid+"-qty");
+			var realQty = parseInt(document.getElementById(xid+"-qty").innerHTML);
+			var selQty = 1;
+			
+			if(realQty===0){
+				alert("Out of stock!");
+			}else{
+				if(selQty<=realQty){
+					var pandp = xid+"("+size+")#"+selQty+"#"+price;
+					var updatedQty = realQty-selQty;
+					var newTotalPrice = (parseFloat(totalPrice.innerHTML)+(price*selQty)).toFixed(2);
+					
+					cartCount++;
+					totalPrice.innerHTML = newTotalPrice;
+					cart[cartCount] = pandp;
+					rqtyField.innerHTML = updatedQty;
+					addRowToCart(xid, cartCount, selQty, price, "("+size+")");
+					alert("Added to the cart!")
+				}else{
+					alert("Out of quntity!");
+				}
+			}
+		}
+		
+		function addRowToCart(id, num, qty, pri, args){
+			var price = parseFloat(pri);
+			var cartView = document.getElementById("cart-views");
+			var carViewTitle = document.getElementById(id+"-title").innerHTML;
+			var subTotal = price*qty;
+			var newCartRow = document.createElement("tr");
+			newCartRow.innerHTML = "<td>"+num+".</td>"+"<td>"+carViewTitle+args+"</td>"+"<td>"+price.toFixed(2)+"</td>"+"<td>"+qty+"</td>"+"<td>"+subTotal.toFixed(2)+"</td>";
+			cartView.appendChild(newCartRow);
+		}
+		
+		function validateEmail(email) {
+			var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			return re.test(String(email).toLowerCase());
+		}
+		
+		function validateNumber(number){
+			var numberFormat = /^\d{10}$/;
+			if(number.match(numberFormat)){
+				return true;
+			}else{
+				return false;
+			}
+		}
+			
+		function orderConfirmed(cusName){
+			var msg = "Dear "+cusName+", you have ordered ";
+			var cartSize = cartCount;
+			console.log(cartSize);
+			var loopRunCount = 1;
+			
+			for(var x in cart){
+				var orderText = cart[x].split("#");
+				var productTitle = orderText[0];
+				var productQty = orderText[1];
+				var productPrice = orderText[2];
+				if(loopRunCount<cartSize){
+					msg = msg + productQty+" "+productTitle+" at a cost of $"+productPrice+" each, ";
+				}else{
+					msg = msg + productQty+" "+productTitle+" at a cost of $"+productPrice+" each. ";
+				}
+				loopRunCount++;
+			}
+			
+			alert(msg);			
+		}
+		
+		function makeTheOrder(){
+			if(parseFloat(totalPrice.value)===0.00){
+				alert("Nothing added to the cart!");
+			}else{
+				var cusName = document.getElementById("cus-name");
+				var cusNumber = document.getElementById("cus-number");
+				var cusEmail = document.getElementById("cus-email");
+				var cusAd1 = document.getElementById("cus-address-1");
+				var cusAd2 = document.getElementById("cus-address-2");
+				var cusAd3 = document.getElementById("cus-address-3");
+				var cusPay = document.querySelector("input[name='cus-pay']:checked").value;
+
+				if(cusName.value===""){
+					alert("All form fields with * is required!");
+				}else{
+					if(cusNumber.value===""){
+						alert("All form fields with * is required!");
+					}else{
+						if(cusEmail.value===""){
+							alert("All form fields with * is required!");
+						}else{
+							if(cusAd1.value==="" || cusAd2==="" || cusAd3===""){
+								alert("All form fields with * is required!");
+							}else{
+								if(validateNumber(cusNumber.value)){
+									if(validateEmail(cusEmail.value)){
+										var opt = confirm("Are you sure you want to place the order?");
+										if(opt){
+											orderConfirmed(cusName.value);
+										}else{
+											alert("Order cancelled!");
+										}
+									}else{
+										alert("Not a valid email!");
+									}
+								}else{
+									alert("Not a valid number");
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		function changeFont(num){
+			var root = document.getElementById('root');
+			var rootStyle = window.getComputedStyle(root, null).getPropertyValue('font-size');
+			var fontSize = parseFloat(rootStyle);
+			var newSize = fontSize + num;
+			if(newSize>0){
+				root.style.fontSize = newSize+"px";
+				fontSizeTxt.innerHTML = newSize;
+			}
+		}
+	
+	</script>
+	</div>
+	</div>
+	
+	<div id="footer">
+					
+		<p><a href="home.html">Home</a>
+		|  <a href="gallery.html">Gallery</a>  
+		|  <a href="shop.html">Store</a>  
+		|  <a href="webQuiz.html">Quiz</a>  
+		|  <a href="Comments form.html">Feedback</a>  
+		|  <a href="webMembers.html">About Us</a><br><br>
+		<span>   Creative ArtLab &copy; 2020 </span><br><br>
+		  <a href="rusirucv.html"> Rusiru Wijethilake </a></p>
+					
+	</div>
+	
+</body>
+</html>

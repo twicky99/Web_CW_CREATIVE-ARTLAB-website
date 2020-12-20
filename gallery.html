@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Gallery|Creative Art Gallery</title>
+    <link rel="stylesheet" href="GalleryStyle.css">
+   
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="top-page">
+        <i class="fa fa-arrow-circle-o-up" onclick="topFunction()"></i>
+    </div>
+    <div>
+        <main>
+			<!-- the header consists of navigation bar -->
+	<header>
+		<div id="navbar">
+		  <img id="logo" src="gallery/logo.jpg" alt="logo">
+			  <div id="navbar-right">
+				<a class="active" href="home.html"id="shift"><i class="fa fa-fw fa-home"> </i>HOME</a> 
+				<a href="gallery.html"><i class="fa fa-image"> </i>GALLERY</a> 
+				<a href="webQuiz.html"><i class="fa fa-edit"> </i>QUIZ</a> 
+				<a href="shop.html"><i class="fa fa-shopping-cart"> </i>SHOP</a> 
+				<a href="Site Map.html"><i class="fa fa-fw fa-map"> </i>SITE MAP</a> 
+				<a href="Comments form.html"><i class="fa fa-fw fa-envelope"> </i>SUPPORT</a>
+				<a href="webMembers.html"><i class="fa fa-user"> </i>ABOUT</a>
+				
+				
+				 
+					
+					
+				</div> 
+			  </div>
+		  </div>
+	</header>
+	
+            <section>
+                <div>
+                    <center>
+                        <h1 id="heading">Ceylon Gallery</h1>
+                    </center>
+                </div>
+
+                <div id="thumbnailsHolder">
+                    <img src="GalleryImages/pic 1.jpg" onclick="zero0()">
+                    <img src="GalleryImages/pic 2.jpg" onclick="zero1()">
+                    <img src="GalleryImages/pic 3.jpg" onclick="zero2()">
+                    <img src="GalleryImages/pic 4.jpg" onclick="zero3()">
+                    <img src="GalleryImages/pic 5.jpg" onclick="zero4()">
+                    <img src="GalleryImages/pic 6.jpg" onclick="zero5()">
+
+                </div>
+
+                <div id="mainimage">
+                    <img id="Image1" src="GalleryImages/pic 1.jpg">
+                </div>
+
+                <p id="Data"></p>
+            </section>
+        </main>
+    </div>
+
+        <!-- Change background colour -->
+        <div class="change">		
+            <label>Background Color: </label><br/>
+            <label><select name="colors" onchange="changebgColor(this)">
+                <option value="#d6b2b2">OysterPink </option>
+                <option value="#BDB76B">DarkKhaki </option>
+                <option value="#FF69B4">HotPink </option>
+                <option value="	#90EE90">LightGreen </option></select></label>
+            <br>
+            <!-- Change text colour -->
+            <label>Text Color: </label><br/>		
+            <label><select name="colors" onchange="changetextColor(this)">
+                <option value="#000000" selected="select">Black</option>
+                <option value="	#FFFFFF">White</option>
+                <option value="#800000">Maroon </option>
+                <option value="	#191970">MidnightBlue</option>
+                <option value="	#2E8B57">SeaGreen </option></select></label>
+            
+        </div>
+		<div class="developer">
+            <a href="PartB/OmarPartB.html" target="_blank"><input  type="submit" value="Part B Page" /></a>
+        </div>
+  
+        <footer id="footer">			
+		<p><a href="home.html">Home</a>
+		|  <a href="gallery.html">Gallery</a>  
+		|  <a href="market.html">Store</a>  
+		|  <a href="WebQuiz.html">Quiz</a>  
+		|  <a href="form.html">Feedback</a>
+		|  <a href="Site Map.html">Site Map</a>
+		|  <a href="webMembers.html">About Us</a><br><br>
+		<span>   Creative ArtLab &copy; 2020 </span><br><br>
+		<a href="CV/OmarCV.html"> M.R.M.Omar </a></p>
+	
+       
+    </div>
+
+</body>
+<script type="text/javascript">
+
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    document.getElementById("Data").innerHTML = "<center><h1>Oil Painting (Sigiriya Frescoes)</h1></center><br><h3>John Still in 1907 wrote, The whole face of the hill appears to have been a gigantic picture gallery... the largest picture in the world perhaps.The paintings would have covered most the western face of the rock, an area 140 metres long and 40 metres high. There are references in the graffiti to 500 ladies in these paintings. However, most have been lost forever. More frescoes, different from those on the rock face, can be seen elsewhere, for example on the ceiling of the location called the 'Cobra Hood Cave'. Although the frescoes are classified as in the Anuradhapura period, the painting style is considered unique. the line and style of application of the paintings differing from Anuradhapura paintings. The lines are painted in a form which enhances the sense of volume of the figures. The paint has been applied in sweeping strokes, using more pressure on one side, giving the effect of a deeper colour tone towards the edge</h3>";
+
+
+    function zero0() {
+        document.getElementById("Image1").src = "GalleryImages/pic 1.jpg";
+        document.getElementById("Data").innerHTML = "<center><h1>Oil Painting (Sigiriya Frescoes)</h1></center><br><h3>John Still in 1907 wrote, The whole face of the hill appears to have been a gigantic picture gallery... the largest picture in the world perhaps.The paintings would have covered most the western face of the rock, an area 140 metres long and 40 metres high. There are references in the graffiti to 500 ladies in these paintings. However, most have been lost forever. More frescoes, different from those on the rock face, can be seen elsewhere, for example on the ceiling of the location called the 'Cobra Hood Cave'. Although the frescoes are classified as in the Anuradhapura period, the painting style is considered unique. the line and style of application of the paintings differing from Anuradhapura paintings. The lines are painted in a form which enhances the sense of volume of the figures. The paint has been applied in sweeping strokes, using more pressure on one side, giving the effect of a deeper colour tone towards the edge</h3>";
+    }
+
+    function zero1() {
+        document.getElementById("Image1").src = "GalleryImages/pic 2.jpg";
+        document.getElementById("Data").innerHTML = "<center><h1>Bronze Statue</h1></center><br><h3>The Veheragala Avalokitesvara Bodhisattva, currently displayed at Colombo National Museum, is considered as the finest Bodhisattva image ever found in Sri Lanka. This bronze statue belonging to Anuradhapura period is delicately designed. Also the Statue of Tara, which is now housed in British Museum is considered as a masterpiece of Sri Lankan art. This image was originally found in Trincomalee district, Sri Lanka. The 33-foot (10 m) high Dambegoda Avalokitesvara Bodhisattva statue is also famous. Statues of Avalokitesvara, Maitreya, Manjushri and Tara can be seen at Buduruwagala. Kushtharajagala Bodhisattva statue of Weligama is another example for Sri Lankan Bodhisattva images. Another fine Tara image can be seen at Colombo National Museum. This statue of Seated Tara was found from Kurunegala district. It is dated to 8th–9th century AD.</h3>";
+    }
+
+
+    function zero2() {
+        document.getElementById("Image1").src = "GalleryImages/pic 3.jpg";
+        document.getElementById("Data").innerHTML = "<center><h1>Yaksha Mask</h1></center><br><h3>Sri Lanka is renowned for the manufacture of wooden masks and puppets. The traditional masks are carved from light Balsa like Kaduru wood (Nux vomica). Kaduru trees grow in the marshy lands bordering paddy fields. The wood is smoke dried for a week in preparation. The hand carved and hand painted masks in traditional dance dramas are both vibrant and colorful. Masks are created for three different types of dancing rituals: 'Kolam', which tell mocking stories of traditional Sri Lankan colonial life; 'Sanni', or devil dancing masks, used in a type of exorcism ceremony to heal people of persisting illnesses believed to be inflicted by demons; and 'Raksha' masks, which are used in festivals and processions. The Naga Raksha (Cobra demon) mask of the 'Raksha Kolama' (demon dance), consists of a ferocious face with bulging, popping & staring eyes, a bloodthirsty carnivorous tongue lolling out of wide mouth armoured and armed to the hilt with set of fanglike teeth, all topped by a set of cobra hoods.</h3>";
+    }
+
+
+    function zero3() {
+        document.getElementById("Image1").src = "GalleryImages/pic 4.jpg";
+        document.getElementById("Data").innerHTML = "<center><h1>Rock Carving</h1></center><br><h3>The main feature of Gal Vihara is the four images of the Buddha that have been carved on a single, large granite rock face, considered to be among the best examples of the rock carving and sculpting arts of the ancient Sinhalese. The rock has been cut almost 15 feet (4.6 m) deep to create a rock face to accommodate the statues, and is the only example in the country where a natural rock has been excavated to this extent for such a purpose. The images position the temple alongside some of the most significant monuments which survive from the ancient kingdoms of Sri Lanka, and make it the most celebrated and visited temple in Polonnaruwa.The large seated image is 15 feet 2.5 inches (4.636 m) tall, and depicts the dhyana mudra.[12] The seat was carved in the shape of a lotus flower, its base decorated with carvings of flowers and lions. The statue sits on a carved throne, decorated with makara images, with four small images of the Buddha (identical to the larger image) carved inside small chambers. This is an unusual feature in ancient Sinhalese sculpture, and is presumably the result of Mahayana influence.The large seated image is 15 feet 2.5 inches (4.636 m) tall, and depicts the dhyana mudra. The seat was carved in the shape of a lotus flower, its base decorated with carvings of flowers and lions. The statue sits on a carved throne, decorated with makara images, with four small images of the Buddha (identical to the larger image) carved inside small chambers. This is an unusual feature in ancient Sinhalese sculpture, and is presumably the result of Mahayana influence.</h3>";
+    }
+
+
+    function zero4() {
+        document.getElementById("Image1").src = "GalleryImages/pic 5.jpg";
+        document.getElementById("Data").innerHTML = "<center><h1>Wood Carving</h1></center><br><h3>Wood carving has a great history since the birth time of buddhism in Sri Lanka. In that moment, people of 18 casts arrived with Arahat Mihindu Thero to Sri Lanka. A wood craftman also was in that crew and that was the beginning of the implementation of wood carving in Sri Lanka. Lankathilaka Temple and Ambekke Devalaya in Kandy are the best places we can prove the history and traditional skills. Ambekke Devalaya was built by king Vikramabahu the third who reigned 1357 AD-1374 AD. It consists of three sections as the Garbha, the Digge and the Hevisimandapaya. Ambekke is world famous due to the wood carvings in the pillars of Hevisimandapaya. Bull and elephant, Gaja Sinha, Angampora image, Lotus flower, kadupul flower, Seeni flower, Binara flower, Annasi flower, image of a horseman, image of mermaid, dragon images, lion images take a prominent place. Also the roof itself has significant features. The rafters all slant from the roof are fixed and kept together by ‘Madol Kurupawa’, a kind of a giant pin in which we cannot find elsewhere. Lankathilaka Temple was built by king Parakramabahu at 14th AD. Walls of the temple are filled with marvelous paintings and wood carvings of flowers and animals etc. Wood carving history of my village is supposed to be started since 16th century with the arrival of Portuguese and Dutch. But craft men believe that it is said to be started during the reign of King Kavantissa and Dutugemunu in 12th BC and 13th BC centuries.</h3>";
+    }
+
+
+    function zero5() {
+        document.getElementById("Image1").src = "GalleryImages/pic 6.jpg";
+        document.getElementById("Data").innerHTML = "<center><h1>Batik</h1></center><br><h3>Originally a Javanese word which meant writing with wax', batik has come a long way since it was spread across East Asia by Dutch colonial officers.Originated in Indonesia and introduced to Sri Lanka by Dutch at the turn of the 19th century, the batik industry in Sri Lanka has developed into a unique form of textile art exclusive to the country.Originated as a primary art of fabric dying, Batik has evolved into a vibrant industry of fabric art in Sri Lanka, Malaysia, Indonesia, Japan, Vietnam, Philippines, Thailand and Singapore with their own identity, methodology and design.In its purest form batik is a method of decorating a piece of cloth by creating pattern on it with wax and colouring rest of the piece of cloth, creating a vibrant mosaic with coloured and uncoloured areas. Painstaking and time consuming, Batik was originally a hobby of the elitists in Kandyan court. The aristocratic ladies of the central kingdom were skilled practitioners of batik and soon the skills of batik were introduced to the artesian classes, who developed tapestry, regional flags and traditional clothes of the aristocrats with batik fabrics.</h3>";
+    }
+
+//color change and text change 
+    function changebgColor(el) {
+ 		document.body.style.backgroundColor = el.value;
+	}
+
+	function changetextColor(el) {
+ 		document.body.style.color = el.value;
+	}
+</script>
+
+</html>

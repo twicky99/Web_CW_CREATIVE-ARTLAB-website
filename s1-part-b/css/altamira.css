@@ -1,0 +1,154 @@
+* {
+  	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background-color: white;
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	box-sizing: content-box;
+	margin: 0px;
+	padding: 0px 17vw;
+}
+
+.white-sheet{
+	background-color: white;
+	padding-top: 20px;
+	box-shadow: 0px 0px 10px 4px #000000aa;
+}
+
+.header{
+	text-align: center;
+	padding: 10px;
+}
+
+.header .page-title{
+	font-size: 2em;
+	color: #ff6a00;
+	font-family: 'Merienda', cursive;
+}
+
+.header .page-sub-title{
+	font-size: 1.5em;
+}
+
+.footer{
+	text-align: center;
+	padding: 10px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.container {
+	padding: 64px;
+}
+
+.container .title{
+	margin-left: 20px;
+	font-family: 'Merienda', cursive;
+	color: #ff6a00;
+	font-size: 1.5em;
+}
+
+.container .description{
+	font-size: 1.15em;
+  	text-align: justify;
+  	text-indent: 50px;
+}
+
+.container a{
+	color: #ff6a00;
+	font-weight: bold;
+}
+
+.backgrounds-great-hall{
+	height: 20vh;
+	background-color: #ff6a00;
+	background-image: url("../images/altamira-greathall.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom;
+	box-sizing: content-box;
+}
+
+.backgrounds-bisons{
+	height: 20vh;
+	background-color: #ff6a00;
+	background-image: url("../images/altamira-bisons.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom;
+	box-sizing: content-box;
+}
+
+.backgrounds-hands{
+	height: 20vh;
+	background-color: #ff6a00;
+	background-image: url("../images/altamira-hands.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom;
+	box-sizing: content-box;
+}
+
+.backgrounds-ex{
+	height: 20vh;
+	background-color: #ff6a00;
+	background-image: url("../images/altamira-cave-paintings-1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom;
+	box-sizing: content-box;
+}
+
+.media-box{
+	padding: 64px;
+	text-align: center;
+	background-color: #ff6a00;
+}
+
+.media-box .title{
+	font-size: 1.5em;
+	color: black;
+	font-family: 'Merienda', cursive;
+}
+
+.media-box .media-grid{
+	margin-top: 64px;
+	display: grid;
+  	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+.column-66 {
+	float: left;
+	width: 66.66666%;
+	padding: 20px;
+}
+
+.column-33 {
+	float: left;
+	width: 33.33333%;
+	padding: 20px;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}

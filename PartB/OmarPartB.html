@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OmarPart B</title>
+    <style>
+        body {
+
+            font-family: Helvetica;
+            padding: 5px;
+        }
+
+        .nav {
+            position: fixed;
+            width: 98%;
+            overflow: hidden;
+            background-color: #131339;
+
+        }
+
+        .nav a {
+            float: left;
+            display: block;
+            color: whitesmoke;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .nav a:hover {
+            background-color: #4d79ff;
+            color: lightblue;
+        }
+
+
+        .nav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .nav a:not(:first-child) {
+                display: none;
+            }
+
+            .nav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .nav.responsive {
+                position: relative;
+            }
+
+            .nav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .nav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        .main {
+            margin-top: 50px;
+            font-size: 50px;
+            text-align: center;
+            font-family: fantasy;
+        }
+
+        .image {
+            width: 100%;
+            height: 650px;
+            padding: 10px;
+        }
+
+        .paragraph {
+            padding: 10px;
+            font-family: Helvetica;
+        }
+
+        @media screen and (min-width: 601px) {
+            div.para {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            div.para {
+                font-size: 16px;
+            }
+        }
+
+        #button {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #8cffcf;
+            color: black;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            opacity: 0.8;
+        }
+
+        #button:hover {
+            background-color: #57edf2;
+        }#footer {
+			width: 100%;
+			height: 145px;
+			background-color: #333;
+			padding-top: 20px;
+			padding-bottom: 15px;
+			color: white;
+			text-align: center;
+			font-family: Helvetica;
+			opacity: 0.9;
+		}
+		#footer a{
+			color: white;
+			text-align: 10px 10px;
+			padding: 20px;
+			text-decoration: none;
+		}		
+		#footer a:hover{
+			background-color: #ddd;
+			border-radius: 15px;
+			color: black;
+		}
+    </style>
+</head>
+
+<body>
+
+    <div class="nav" id="mynav">
+        <a href="#para_1">Culture of Sri Lanka</a>
+        <a href="#para_2">History</a>
+        <a href="#para_3">Art and Craft</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div>
+        <a id="para_1"></a>
+        <div class="paragraph">
+            <h1 class="main">Culture of Sri Lanka</h1>
+
+            <img src="Culture.jpg" class="image">
+            <div>
+                <p>The culture of Sri Lanka mixes modern elements with traditional aspects and is known for its regional diversity. Sri Lankan culture has long been influenced by the heritage of Theravada Buddhism passed on from India, and the religion's legacy is particularly strong in Sri Lanka's southern and central regions. South Indian cultural influences are especially pronounced in the northernmost reaches of the country. The history of colonial occupation has also left a mark on Sri Lanka's identity, with Portuguese, Dutch, and British elements having intermingled with various traditional facets of Sri Lankan culture. Additionally, Indonesian culture has also influenced certain aspects of Sri Lankan culture. Culturally, Sri Lanka, particularly the Sinhalese people, possesses strong links to both India and Southeast Asia.<br /><br />
+				The country has a rich artistic tradition, with distinct creative forms that encompass music, dance, and the visual arts. Sri Lankan culture is internationally associated with cricket, a distinct cuisine, an indigenous holistic medicine practice, religious iconography such as the Buddhist flag, and exports such as tea, cinnamon, and gemstones, as well as a robust tourism industry. Sri Lanka has longstanding ties with the Indian subcontinent that can be traced back to prehistory. Sri Lanka's population is predominantly Sinhalese with sizable Sri Lankan Moor, Sri Lankan Tamil, Indian Tamil, Sri Lankan Malay and Burgher minorities.</p>
+            </div>
+        </div>
+
+        <a id="para_2"></a>
+        <div class="paragraph">
+            <h1 class="main">History</h1>
+
+            <center> <img src="History.jpg" class="image"></center>
+            <div>
+                <p>Sri Lanka has a documented history of over 2,000 years, mainly due to ancient historic scriptures like Mahawamsa, and with the first stone objects dating back to 500,000 BC. Several centuries of intermittent foreign influence has transformed Sri Lankan culture to its present form. Nevertheless, the ancient traditions and festivals are still celebrated on the island, together with other minorities that make up the Sri Lankan identity.<br /> <br />
+				One very important aspect that differentiates Sri Lankan history is its view on women. Women and men in Sri Lanka have been viewed equal for thousands of years from ruling the country to how they dress. Both men and women had the chance to rule the land (Which is true for even today. The world's first female prime minister, Sirimavo Bandaranaike, was from Sri Lanka.<br/><br/>
+				Even though clothing today is very much westernized and modest dressing has become the norm for everyone, ancient drawings and carvings such as 'Sigiriya art', Isurumuniya Lovers show how the pre-colonial Sri Lankans used to dress, which shows identical amount of clothing and status for men and women.
+                </p>
+            </div>
+        </div>
+
+        <a id="para_3"></a>
+        <div class="paragraph">
+            <h1 class="main">Art and Crafts</h1>
+
+            <center> <img src="Arts and Crafts.jpg" class="image"></center>
+            <div>
+                <p>Many forms of Sri Lankan arts and crafts take inspiration from the Island's long and lasting Buddhist culture which in turn has absorbed and adopted countless regional and local traditions. In most instances Sri Lankan art originates from religious beliefs, and is represented in many forms such as painting, sculpture, and architecture. One of the most notable aspects of Sri Lankan art are caves and temple paintings, such as the frescoes found at Sigiriya, and religious paintings found in temples in Dambulla and Temple of the Tooth Relic in Kandy.<br/> <br/>
+				Other popular forms of art have been influenced by both natives as well as foreign settlers. For example, traditional wooden handicrafts and clay pottery are found around the hilly regions while Portuguese-inspired lacework and Indonesian-inspired Batik are also notable.
+                </p>
+            </div>
+        </div>
+
+    <button onclick="topFunction()" id="button" title="Go to top"> <b>Go to Top </b></button>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mynav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+                document.getElementById("button").style.display = "block";
+            } else {
+                document.getElementById("button").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+	<footer id="footer">			
+		<p><a href="home.html">Home</a>
+		|  <a href="gallery.html">Gallery</a>  
+		|  <a href="market.html">Store</a>  
+		|  <a href="WebQuiz.html">Quiz</a>  
+		|  <a href="form.html">Feedback</a>
+		|  <a href="Site Map.html">Site Map</a>
+		|  <a href="webMembers.html">About Us</a><br><br>
+		<span>   Creative ArtLab &copy; 2020 </span><br><br>
+		<a href="CV/OmarCV.html"> M.R.M.Omar </a></p>
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+	<link rel="styleSheet" type="text/css" href="cssstudent2/partbstudent2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+ <body>
+	
+	<!-- the header consists of navigation bar -->
+	<header>
+		<div id="navbar">
+		  <img id="logo" src="gallery/logodark.png" alt="logo1">
+			  <div id="navbar-right">
+				<a class="active" href="home.html"id="shift"><i class="fa fa-fw fa-home"> </i>HOME</a> 
+				<a href="gallery.html"><i class="fa fa-image"> </i>GALLERY</a> 
+				<a href="webQuiz.html"><i class="fa fa-edit"> </i>QUIZ</a> 
+				<a href="shop.html"><i class="fa fa-shopping-cart"> </i>STORE</a>
+				<a href="Site Map.html"><i class="fa fa-fw fa-map"> </i>SITE MAP</a> 
+				<a href="Comments form.html"><i class="fa fa-fw fa-envelope"> </i>SUPPORT</a>
+				<a href="webMembers.html"><i class="fa fa-user"> </i>ABOUT</a>
+			  </div>
+		</div>
+	</header>
+	
+	<div class="backpic">
+	
+		  <div class="heading">
+			<h1>- DRAWINGS OF LEONARDO DA VINCI -</h1>
+			<hr class="hrHeading">
+		  </div>
+	  
+		<br>
+	  
+	 
+		<!-- the two columns (photo and the detail) -->
+		<div class="row">
+				<div class="columnA">
+					<img id="person" src="gallery/leonardo.jpg" alt="art21">
+				</div>
+				<div class="columnB">
+					<p id="detail">Leonardo Da Vinci (1452 - 1519) was an Italian polymath of the Renaissance whose areas of interest included invention, drawing, painting,
+					sculpture, architecture, science,etc...He is among the most influential artists in history, having left a significant legacy.
+					Da Vinci lived in a golden age of creativity among such contemporaries as Raphael and Michael Angelo,
+					and contributed his unique genius to virtually everything he touched.
+					'MONA LISA' and "THE LAST SUPPER' are some of his world famous paintings.
+					
+					<br>
+					<br>
+					<p id="fontlarge">  SOME OF HIS DRAWINGS AND PAINTINGS ARE GIVEN BELOW</p>
+				</div>
+		</div>
+		<br>
+	  
+		
+		<div id="canvas">
+			<br><br><br>
+		  
+		  <!--five thumbnails in a column-->
+		 
+			<div class="thumbs">
+				<h2>CLICK ON THE IMAGES TO GET A DETAILED DESCRIPTION BELOW</h2>
+				<div class="thumbCol">
+			  
+					<img src="gallery/Monalisa.jpg" alt="Mona Lisa, also known as La Gioconda, is the wife of Francesco del Giocondo. This painting is painted as oil on wood. The original painting size is 77 x 53 cm (30 x 20 7/8 in) and is owned by by the Government of France and is on the wall in the Louvre in Paris, France.  "style="width:30%" onclick="changeImg(this);">
+					<h3> MONA LISA </h3>
+				</div>
+			  
+				<br><br><br>
+			  
+				<div class="thumbCol">
+			  
+					<img src="gallery/lastsupper.jpg" alt="In 1495, Leonardo da Vinci began what would become one of history's most influential works of art - The Last Supper which is Leonardo's visual interpretation of an event chronicled in all four of the Gospels (books in the Christian New Testament)." style="width:30%" onclick="changeImg(this);">
+					<h3>THE LAST SUPPER</h3>
+				</div>
+			  
+				<br><br><br>
+			
+				<div class="thumbCol">
+			  
+					<img src="gallery/adoration-of-the-magi.jpg" alt="The Adoration of the Magi is an unfinished early painting by Leonardo da Vinci. Leonardo was given the commission by the Augustinian monks of San Donato a Scopeto in Florence, but departed for Milan the following year, leaving the painting unfinished. It has been in the Uffizi Gallery in Florence since 1670. " style="width:30%" onclick="changeImg(this);">
+					<h3>THE ADORATION OF THE MAGI </h3>
+				</div>
+			  
+				<br><br><br>
+			
+				<div class="thumbCol">
+			  
+					<img src="gallery/selfportrait.jpg" alt="This self portait was painted in 1512 using red chalk, when Leonardo da Vinci was 50 and living in France. The original painting measures 33.3 x 21.3 cm (13 1/8 x 8 3/8 in). It is now held in the magnificent collection of the Biblioteca Reale, Turin." style="width:30%" onclick="changeImg(this);">
+					<h3>SELF PORTRAIT</h3>
+				</div>
+			  
+				<br><br><br>
+			
+				<div class="thumbCol">
+			  
+					<img src="gallery/musician.jpg" alt="If indeed Leonardo was the painter, Portrait Of A Musician would be the only portrait he did of a man. This painting is completely lacking in documentation and there is no record of anyone ever having commissioned it. Often considered to be his least important work,  " style="width:30%" onclick="changeImg(this);">
+					<h3>THE MUSICIAN</h3>
+				</div>
+			  
+				</div>
+				  
+					<br><br><br><br><br>
+			  
+			  
+				<div class="thumbCollection">
+			  
+					<span onclick="this.parentElement.style.display='none'" class="imgCloseBtn">&times;</span>
+					<img id="expandedThumb" style="width:45%">
+				
+					<br><br><br>
+				  
+					<div id="thumbTxt"></div>
+				
+				</div>
+			  
+					<br><br>
+			
+			<!--Image enlarge view script-->
+			
+			<script>
+			
+			  function changeImg(images){
+					   var expandImg = document.getElementById("expandedThumb");
+					   var ImgTxt = document.getElementById("thumbTxt");
+					   expandImg.src = images.src;
+					   ImgTxt.innerHTML = images.alt;
+					   expandImg.parentElement.style.display="block";
+					   }
+					   
+			</script>
+			<br>
+		  
+	  </div>
+	  
+	  <br><br>
+
+	  
+	  <!-- footer -->
+	</div> 
+	<footer id="footer">
+				
+					<p><a href="home.html">Home</a>
+					|  <a href="gallery.html">Gallery</a>  
+					|  <a href="shop.html">Store</a>  
+					|  <a href="webQuiz.html">Quiz</a>  
+					|  <a href="Comments form.html">Feedback</a>  
+					|  <a href="webMembers.html">About Us</a><br><br>
+					<span>   Creative ArtLab &copy; 2020 </span><br><br>
+					  <a href="tharinducv.html"> Tharindu Wickramasinghe </a></p>
+				
+		
+		</footer>
+	 
+	</body>
+	
+</html>

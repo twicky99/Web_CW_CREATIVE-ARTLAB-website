@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Quiz</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="cssstudent3/quiz.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+</head>
+<body>	
+	<!-- the header consists of navigation bar -->
+	<header>
+		<div id="navbar">
+		  <img id="logo" src="pics/logo.png" alt="logo1">
+			  <div id="navbar-right">
+				<a href="home.html"id="shift"><i class="fa fa-fw fa-home"> </i>HOME</a> 
+				<a href="gallery.html"><i class="fa fa-image"> </i>GALLERY</a> 
+				<a class="active" href="webQuiz.html"><i class="fa fa-edit"> </i>QUIZ</a> 
+				<a href="shop.html"><i class="fa fa-shopping-cart"> </i>SHOP</a> 
+				<a href="Site Map.html"><i class="fa fa-fw fa-map"> </i>SITE MAP</a> 
+				<a href="Comments form.html"><i class="fa fa-fw fa-envelope"> </i>SUPPORT</a>
+				<a href="webMembers.html"><i class="fa fa-user"> </i>ABOUT</a>
+			  </div>
+		  </div>
+	</header>
+	
+	<form name="myform" method="post">	
+		<div class = "container">
+			<fieldset>
+				<legend>Arts Quiz</legend>
+				
+				<p class="info">You got three minutes to complete the quiz.<br><br>
+				For each correct answer you will be awarded 2 marks & for each wrong answer you will be deducted -1 mark
+				</p>
+					
+				<fieldset class = "quizTimer">
+					<div class ="Timer">Quiz ends in <span id="quizTimer">03:00</span> minutes!</div>
+				</fieldset>
+				<br>
+						
+				<div class = "question">	
+				<span id = "Q1">Q1. What category of colors do Blue, Yellow and Red belong?</span><br>
+				<br><label for = "a1-1"><input type="radio" name="Q1" id = "a1-1" value="a" />  Complimentary</label><br>
+				<label for = "a1-2"><input type="radio" name="Q1" id = "a1-2" value="b" />  Intermediate</label><br>
+				<label for = "a1-3"><input type="radio" name="Q1" id = "a1-3" value="c" />  Primary</label><br>
+				<label for = "a1-4"><input type="radio" name="Q1" id = "a1-4" value="d" />  Secondary</label> <br>
+				</div>
+					
+				<div class = "question">				 
+				<span id = "Q2">Q2. The biggest impact to Sri Lankan Arts and Crafts is subsequent to the arrival of,</span><br>
+				<br><label for = "a2-1"><input type="radio" name="Q2" id = "a2-1" value="a" />  Dutch</label><br>
+				<label for = "a2-2"><input type="radio" name="Q2" id = "a2-2" value="b" />  British</label><br>
+				<label for = "a2-3"><input type="radio" name="Q2" id = "a2-3" value="c" />  Portuguese</label><br>
+				<label for = "a2-4"><input type="radio" name="Q2" id = "a2-4" value="d" />  Arhat Mahinda Thero</label><br>
+				</div>
+					
+				<div class = "question">	
+				<span id = "Q3">Q3. In which Museum does the world famous art Mona Lisa drawn by Leonardo da Vinci kept?</span><br>
+				<br><label for = "a3-1"><input type="radio" name="Q3" id = "a3-1" value="a" />  Louvre Museum (Paris)</label><br>
+				<label for = "a3-2"><input type="radio" name="Q3" id = "a3-2" value="b" />  Museum of Modern Art (NYC)</label><br>
+				<label for = "a3-3"><input type="radio" name="Q3" id = "a3-3" value="c" />  National Museum (Oslo - Norway)</label><br>
+				<label for = "a3-4"><input type="radio" name="Q3" id = "a3-4" value="d" />  Santa Maria delle Graize (Milan, Italy)</label><br>
+				</div>
+					
+				<div class = "question">	
+				<span id = "Q4">Q4. Where do you find the famous ancient wood carving architectures in Sri Lanka?</span><br>
+				<br><label for = "a4-1"><input type="radio" name="Q4" id = "a4-1" value="a" />  Nelum Pokuna Mahinda Rajapaksa Theatre</label><br>
+				<label for = "a4-2"><input type="radio" name="Q4" id = "a4-2" value="b" />  Embekka Devalaya</label><br>
+				<label for = "a4-3"><input type="radio" name="Q4" id = "a4-3" value="c" />  Dambulla Temple</label><br>
+				<label for = "a4-4"><input type="radio" name="Q4" id = "a4-4" value="d" />  Art Gallery</label><br>
+				</div>
+					
+				<div class = "question">	
+				<span id = "Q5">Q5. Among the 10 most famous paintings in the world which artist's name is repeated twice,</span><br>
+				<br><label for = "a5-1"><input type="radio" name="Q5" id = "a5-1" value="a" />  Vincent Van Gogh</label><br>
+				<label for = "a5-2"><input type="radio" name="Q5" id = "a5-2" value="b" />  Edvard Munch</label><br>
+				<label for = "a5-3"><input type="radio" name="Q5" id = "a5-3" value="c" />  Leonardo da Vinci</label><br>
+				<label for = "a5-4"><input type="radio" name="Q5" id = "a5-4" value="d" />  Pablo Picasso</label><br>
+				</div>
+					
+				<div class = "question">	
+				<span id = "Q6">Q6. Traditional Sri Lankan masks have been used to,</span><br>
+				<br><label for = "a6-1"><input type="radio" name="Q6" id = "a6-1" value="a" />  Frighten People</label><br>
+				<label for = "a6-2"><input type="radio" name="Q6" id = "a6-2" value="b" />  Cure/Heal sickness</label><br>
+				<label for = "a6-3"><input type="radio" name="Q6" id = "a6-3" value="c" />  Export as a business</label><br>
+				<label for = "a6-4"><input type="radio" name="Q6" id = "a6-4" value="d" />  Figure out Ancient Kings</label><br>
+				</div>
+					
+				<div class = "question">	
+				<span id = "Q7">Q7. Pablo Picasso belonged to which country?</span><br>
+				<br><label for = "a7-1"><input type="radio" name="Q7" id = "a7-1" value="a" />  Germany</label><br>
+				<label for = "a7-2"><input type="radio" name="Q7" id = "a7-2" value="b" />  France</label><br>
+				<label for = "a7-3"><input type="radio" name="Q7" id = "a7-3" value="c" />  Italy</label><br>
+				<label for = "a7-4"><input type="radio" name="Q7" id = "a7-4" value="d" />  Spain</label><br>
+				</div>
+					
+				<div class = "question">	
+				<span id = "Q8">Q8. What is the artistic site which has been declared as the 8th Wonder of the World by UNESCO?</span><br>
+				<br><label for = "a8-1"><input type="radio" name="Q8" id = "a8-1" value="a" />  Temple of tooth relic</label><br>
+				<label for = "a8-2"><input type="radio" name="Q8" id = "a8-2" value="b" />  Sigiriya</label><br>
+				<label for = "a8-3"><input type="radio" name="Q8" id = "a8-3" value="c" />  Nelum Pokuna Theatre</label><br>
+				<label for = "a8-4"><input type="radio" name="Q8" id = "a8-4" value="d" />  Lotus tower</label><br>
+				</div>
+					
+				<div class = "question">	
+				<span id = "Q9">Q9. What is the No.1 rated Wax Museum in the World?</span><br>
+				<br><label for = "a9-1"><input type="radio" name="Q9" id = "a9-1" value="a" />  Madame Tussauds London</label><br>
+				<label for = "a9-2"><input type="radio" name="Q9" id = "a9-2" value="b" />  Hollywood Wax Museum</label><br>
+				<label for = "a9-3"><input type="radio" name="Q9" id = "a9-3" value="c" />  The Wax Museum Gold Coast</label><br>
+				<label for = "a9-4"><input type="radio" name="Q9" id = "a9-4" value="d" />  Movieland Wax Museum Niagara Falls</label><br>
+				</div>
+					
+				<div class = "question">	
+				<span id = "Q10">Q10. Where is the Open Air Art Gallery situated?</span><br>
+				<br><label for = "a10-1"><input type="radio" name="Q10" id = "a10-1" value="a" />  Maitland Plains</label><br>
+				<label for = "a10-2"><input type="radio" name="Q10" id = "a10-2" value="b" />  Barnes Plains</label><br>
+				<label for = "a10-3"><input type="radio" name="Q10" id = "a10-3" value="c" />  Horton Plains</label><br>
+				<label for = "a10-4"><input type="radio" name="Q10" id = "a10-4" value="d" />  Green Path</label><br>
+				</div>
+					
+				<br>
+				<button type="button" id="sendAnswers">Submit Answers</button>
+			</fieldset>
+		</div>	
+	</form>
+	
+	<!-- the footer section-->
+	<footer id="footer">			
+		<p><a href="home.html">Home</a>
+		|  <a href="gallery.html">Gallery</a>  
+		|  <a href="shop.html">Store</a>  
+		|  <a href="webQuiz.html">Quiz</a>  
+		|  <a href="Comments form.html">Feedback</a>  
+		|  <a href="webMembers.html">About Us</a><br><br>
+		<span>   Creative ArtLab &copy; 2020 </span><br><br>
+		<a href="NivinCV.html"> Nivin Sajanaka </a></p>
+	</footer>
+	
+	<script>
+	
+		/* Timer */
+		function timer(duration, display) {
+			var timer = duration, minutes, seconds;
+			setInterval(function () {
+				minutes = parseInt(timer / 60, 10);
+				seconds = parseInt(timer % 60, 10);
+
+				minutes = minutes < 10 ? "0" + minutes : minutes;
+				seconds = seconds < 10 ? "0" + seconds : seconds;
+
+				display.textContent = minutes + ":" + seconds;
+
+				if (--timer < 0) {
+					timer = duration;
+				}
+			}, 1000);
+		}
+
+		/* the countdown(timer) starts as soon as the page is loaded */
+		window.onload = function () {
+			var oneMinute = 60 * 3,
+				display = document.querySelector('#quizTimer');
+			timer(oneMinute, display);
+		};
+		
+		/* setTimeout() method will wait for the specified number of milliseconds and then execute the specified function. */
+		var myTimer = window.setTimeout ("checkAnswers()", 182000);
+			
+		var startTime = new Date();
+		
+		document.getElementById("sendAnswers").addEventListener("click", checkAnswers);
+
+		function checkAnswers(){
+			var endTime = new Date();
+						
+			/* clearTimeout() method is used to stop the execution of the function specified in the setTimeout() method. */
+			window.clearTimeout(myTimer);
+							
+			/* calculating the time taken by the user to answer the quiz */
+			var totalTime = endTime - startTime;
+				
+			var Q1=document.myform.Q1.value;
+			var Q2=document.myform.Q2.value;
+			var Q3=document.myform.Q3.value;
+			var Q4=document.myform.Q4.value;
+			var Q5=document.myform.Q5.value;
+			var Q6=document.myform.Q6.value;
+			var Q7=document.myform.Q7.value;
+			var Q8=document.myform.Q8.value;
+			var Q9=document.myform.Q9.value;
+			var Q10=document.myform.Q10.value;
+				
+			var total = 0;
+			var correct = 0;
+			var incorrect = 0;
+				
+			/* checking whether the answers are correct or incorrect */
+			if(Q1 == "c"){
+				total = total + 2;
+				correct++;
+				document.write(" 1) " + " \&#x2705;" + ", A1 - Primary <br>");
+			} else {
+				total = total - 1;
+				incorrect++;
+				document.write(" 1) " + " \&#x274C;" + ", A1 - Primary <br>");
+			}
+			
+			if(Q2 == "d"){
+				total = total + 2;
+				correct++;
+				document.write(" 2) " + " \&#x2705;" + ", A2 - Arhat Mahinda Thero <br>");
+			} else {
+				total = total - 1;
+				incorrect++;
+				document.write(" 2) " + " \&#x274C;" + ", A2 - Arhat Mahinda Thero <br>");
+			}
+				
+			if(Q3 == "a"){
+				total = total + 2;
+				correct++;
+				document.write(" 3) " + " \&#x2705;" + ", A3 - Louvre Museum (Paris) <br>");
+			} else{
+				total = total - 1;
+				incorrect++;
+				document.write(" 3) " + " \&#x274C;" + ", A3 - Louvre Museum (Paris) <br>");
+			}
+			
+			if(Q4 == "b"){
+				total = total + 2;
+				correct++;
+				document.write(" 4) " + " \&#x2705;" + ", A4 - Embekka Devalaya <br>");
+			} else{
+				total = total - 1;
+				incorrect++;
+				document.write(" 4) " + " \&#x274C;" + ", A4 - Embekka Devalaya <br>");
+			}
+			 
+			if(Q5 == "c"){
+				total = total + 2;
+				correct++;
+				document.write(" 5) " + " \&#x2705;" + ", A5 - Leonardo da Vinci <br>");
+			} else{
+				total = total - 1;
+				incorrect++;
+				document.write(" 5) " + " \&#x274C;" + ", A5 - Leonardo da Vinci <br>");
+			}
+			
+			if(Q6 == "b"){
+				total = total + 2;
+				correct++;
+				document.write(" 6) " + " \&#x2705;" + ", A6 - Cure/Heal sickness <br>");
+			} else{
+				total = total - 1;
+				incorrect++;
+				document.write(" 6) " + " \&#x274C;" + ", A6 - Cure/Heal sickness <br>");
+			}
+				
+			if(Q7 == "d"){
+				total = total + 2;
+				correct++;
+				document.write(" 7) " + " \&#x2705;" + ", A7 - Spain <br>");
+			} else{
+				total = total - 1;
+				incorrect++;
+				document.write(" 7) " + " \&#x274C;" + ", A7 - Spain <br>");
+			}
+				
+			if(Q8 == "b"){
+				total = total + 2;
+				correct++;
+				document.write(" 8) " + " \&#x2705;" + ", A8 - Sigiriya <br>");
+			} else{
+				total = total - 1;
+				incorrect++;
+				document.write(" 8) " + " \&#x274C;" + ", A8 - Sigiriya <br>");
+			}
+				
+			if(Q9 == "a"){
+				total = total + 2;
+				correct++;
+				document.write(" 9) " + " \&#x2705;" + ", A9 - Madame Tussauds London <br>");
+			} else{
+				total = total - 1;
+				incorrect++;
+				document.write(" 9) " + " \&#x274C;" + ", A9 - Madame Tussauds London <br>");
+			}
+				
+			if(Q10 == "d"){
+				total = total + 2;
+				correct++;
+				document.write(" 10)" + "\&#x2705;" + ", A10 - Green Path <br>");
+			} else{
+				total = total - 1;
+				incorrect++;
+				document.write(" 10)" + "\&#x274C;" + ", A10 - Green Path <br>");
+			}
+				
+			/* Showing the user how much time he/she spent to complete the quiz */
+			alert("Time taken to complete the quiz is " + totalTime/1000 + " seconds")
+								
+			/* Grading the user according to the marks gained by him/her for the quiz */
+			if (total < 0) {
+				document.write("<br> Your Achievement, 0  out of 20 marks. <br> ");
+			} else {
+				document.write("<br> Correct Answers - " +correct+ "<br>" );
+				document.write("Incorrect Answers - " +incorrect+ "<br>");
+				document.write("<br> Your Achievement, " +total+ " out of 20 marks. <br> ")
+			}
+							
+			/* Setting the background-color to green or lightpink according to the marks */
+			if (total >= 14){
+				document.body.style.backgroundColor = "lightgreen";
+			}
+			else{
+				document.body.style.backgroundColor = "lightpink";
+			}
+		}
+			
+	</script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+*{box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*scroll to top button*/
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#scrollBtn:hover {
+  background-color: #555;
+}
+
+/*background picture*/
+.backpic{
+	background-image: url("gallery/presentation-page-background.jpg");
+	background-attachment: fixed;
+	padding-top:50px;
+}
+
+
+/* The logo of the navigation bar */
+#navbar #logo {
+	padding-left:20px;
+	padding-bottom:8px;
+	width:270px;
+	height:100px;
+	transition:0.4s;
+}
+
+/* the navigation bar */
+#navbar {
+	overflow: hidden;
+	background-color:white;
+	padding: 15px 7px;
+	transition: 0.4s;
+	position: fixed;
+	width: 100%;
+	height:18%; 
+	top: 10;
+	z-index: 99;
+}
+
+#navbar a {
+	float: left;
+	color: #b58b1d;
+	font-weight:bold;
+	text-align: center;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 15px; 
+	line-height: 25px;
+}
+
+#navbar a.active {
+	background-color:#20b2aa;
+	color:#ffffff;
+	border-radius: 15px;
+}
+
+#navbar a:hover {
+	color:#8b4513;
+	background-color:#a52a2a;
+	border-radius: 15px;
+	color:white;
+}
+
+
+
+#navbar-right {
+	float: right;
+	padding-top:5px;
+	padding-right:20px;
+}	
+
+
+/*to give a padding to the home button in the navigation bar*/
+#shift {
+	padding-left:25px;
+}
+
+
+/* the slideshow pictures*/
+.mySlides {
+	display:none;
+	height:530px;
+	width:100%;
+}
+
+
+/*the title(creative artlab )on the center of the image*/
+#textonimage{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1{
+	color: white;
+    font-family: 'Pacifico';
+    font-size:2em;
+    font-weight:bold;
+	font-size:80px;
+	-webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+
+
+h2{
+	font-size:28px;
+	text-align:center;
+}
+
+/*the welcome text on the image */
+#intro{
+	font-size:23px;
+}
+
+
+
+.container {
+	margin-top:0px;
+	position: relative;
+	max-width: 100%;
+	margin: 0 auto;
+	animation-timing-function: linear;
+}
+
+/*The content written on the text*/
+.container .content {
+	
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(0, 0, 0, 0.5); /*Black background with 0.5 opacity */
+	color: #f1f1f1;
+	width: 100%;
+	padding-top:10px;
+}
+
+.section1{
+	background-image: url("gallery/bgmask.png");
+	opacity:0.95;
+	background-image:opacity(0.5);
+	background-position:center;
+	background-attachment:fixed;
+	margin-top:80px;
+	padding-top:10px;
+	padding-bottom:10px;
+	background-color:#d3d3d3;
+}
+/* the small icons placed in section 1 for quality,reliability and service topics */
+#imgmark{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 80%;
+}
+
+#imgmark:hover {
+	-webkit-transform: scaleX(-1);  /*flip the image*/
+	transform: scaleX(-1);
+	
+}
+
+
+/* the paragraphs written to each quality,reliabilty and service topics */
+#paramark{
+	font-size:19px;
+	text-align:center;
+	padding:9px;
+	color:#b22222;
+	font-weight:bold;
+}
+
+
+
+
+
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* the columns divided in section1 as columnA,columnB,columnC*/
+.columnA{
+	float:left;
+	width: 33.33%;
+}
+
+.columnB{
+	float:left;
+	width: 33.33%;
+}
+
+.columnC{
+	float:left;
+	width: 33.33%;
+}
+
+h4{
+	font-size:24px;
+	text-align:center;
+}
+h5{
+	color:white;
+	font-size:28px;
+	text-align:center;
+	font-family:"Lucida Console", Monaco, monospace;
+}
+
+
+.section2{
+	padding-top:10px;
+	margin-top:1px;
+	background-color:black;
+	margin-bottom:0;
+}
+
+#section2para{
+	color:white;
+	font-size:22px;
+	text-align:center;
+	padding:9px;
+	font-family:"Times New Roman", Times, serif;
+}
+
+/* button in the background area after section2 */
+.buttonmid{
+	margin-top:130px;
+	margin-left:30%;
+}
+#buttonmidpara{
+	color:white;  /*line above the button*/
+	font-size:35px;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+
+}
+.buttonmid .button1 {
+	position: relative;
+	-ms-transform: translate(-50%, -50%);
+	background-color: white;
+	color: red;
+	font-size: 16px;
+	font-weight:bold;
+	margin-left:20%;
+	padding:10px 20px 10px 20px;
+	border: none;
+	cursor: pointer;  
+	border-radius: 10px;
+	text-align: center;
+}
+.buttonmid .button1:hover {   /*change of the button appearance when cursor is moved along it*/
+	background-color: yellow;
+	color:black;
+	font-weight:bold;
+}
+
+
+
+#gallery{							/*comprises of two column as marqueeX and marqueeY*/
+	margin-top:100px;
+}
+
+.marqcolumnX{						/*column in the left of gallery*/
+	float:left;
+	text-align:center;
+	font-family: 'Sofia';
+	padding-top:180px;
+	font-size:40px;
+	color:white;
+	width:30%;
+	height:500px;
+	background-color:black;
+}
+
+.btn2{								/*button below the text in marqcolumnX*/
+	margin-top:40px;
+	margin-left:15px;
+	padding:10px 20px 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+	font-weight:bold;
+}
+.btn2:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	border: 2px solid white;
+    color:white;
+    font-weight:bold;
+}
+
+/*column consists of images ;marquee used*/
+.marqcolumnY{
+	float:right;
+	width:70%;
+	background: rgba(0, 0, 0, 0.5); /*Black background with 0.5 opacity */
+	
+}
+
+
+/*the images in the marquee section*/
+#marqueeimg{
+	padding-right:20px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius:10px;
+	border-color:black;
+	width:500px;
+	height:500px;
+}
+
+
+
+/*the footer*/
+.footer-icons{
+	display:inline-block;
+}
+.footer-person-name{
+	text-align:center;
+}
+
+/*the social media icons used*/
+.fa-facebook {				
+	background: #3B5998;
+	color: white;
+}
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
+.fa-skype {
+	background: #00aff0;
+	color: white;
+}
+
+/*left side column of footer*/
+.footer-left {
+	float: left;
+	width: 40%;
+	padding: 40px;
+	height: 250px;
+	background-color:black;
+	color:white;
+}
+.footer-left a{
+	color:white;
+}
+.footer-left a:hover{
+	background-color:black;
+	color:yellow;
+}
+
+/*center column of footer*/
+.footer-center {
+	float: left;
+	width: 30%;
+	padding: 40px;
+	height: 250px;
+	background-color:black;
+	color:white;
+}
+.footer-center a{
+	color:#5F9F9F;
+}
+.footer-center a:hover{
+	background-color:black;
+	color:yellow;
+}
+
+
+/*right column of footer*/
+.footer-right {
+	float: right;
+	width: 30%;
+	padding:30px;
+	height: 250px;
+	top: 50%;
+	left: 50%;
+	background-color:black;
+	color:white;
+}
+
+
+

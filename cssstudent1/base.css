@@ -1,0 +1,297 @@
+*{box-sizing: border-box;}
+html{
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background-image: url("../images/presentation-page-background.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	margin:0;
+}
+
+/* The logo of the navigation bar */
+#navbar #logo {
+	padding-left:20px;
+	padding-bottom:8px;
+	width:270px;
+	height:100px;
+	transition:0.4s;
+}
+
+/* the navigation bar */
+#navbar {
+	overflow: hidden;
+	background-color:white;
+	padding: 15px 7px;
+	transition: 0.4s;
+	position: fixed;
+	width: 100%;
+	height:18%; 
+	top: 10;
+	z-index: 99;
+}
+
+#navbar a{
+	float: left;
+	color: #b58b1d;
+	font-weight:bold;
+	text-align: center;
+	background-color: white;
+	border: 0px;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 15px; 
+	line-height: 25px;
+}
+
+#navbar a.active {
+	background-color:#20b2aa;
+	color:#ffffff;
+	border-radius: 15px;
+}
+
+#navbar a:hover{
+	background-color:#a52a2a;
+	border-radius: 15px;
+	color:white;
+}
+
+#navbar-right {
+	float: right;
+	padding-top:5px;
+}
+
+/*to give a padding to the home button in the navigation bar*/
+#shift {
+	padding-left:40px;
+}
+
+/*background picture*/
+.backpic{
+	background-image:url("presentation-page-background.jpg");
+	background-attachment: fixed;
+	padding-top:50px;
+}
+
+.container{
+	height: 98vh;
+	width: 98vw;
+	padding: 20px;
+}
+.middle-aligned{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.welcome-area{
+	text-align: center;
+}
+
+.welcome-logo{
+	height: 30vh;
+	animation: fadein 3s;
+}
+
+.sub-text{
+	color: black;
+	margin-top: 30px;
+}
+
+.dev-names{
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.page-title{
+	margin-left: 10px;
+	font-size: 1.125em;
+}
+
+.shop-section{
+	margin-top: 20px;
+	background-color: #FFFFFFaa;
+}
+
+.tool-box{
+	background-color: #DC7D00;
+	padding: 10px;
+}
+
+.total-price-view{
+	color: black;
+}
+
+.shop-items{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.shop-item {
+	display: flex;
+  	padding: 1rem;
+}
+
+.card {
+	background-color: white;
+	border-radius: 0.25rem;
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	letter-spacing: 0;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);;
+}
+
+.card img{
+	height: auto;
+	max-width: 26.25em;
+	vertical-align: middle;
+}
+
+.card .inner-text{
+	padding: 0.125em 1em;
+	text-align: center;
+}
+
+.card .price {
+	color: grey;
+	font-size: 1.5em;
+}
+
+.card button {
+	border: none;
+	outline: 0;
+	padding: 0.75em;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 1.125em;
+}
+
+.card button:hover {
+	opacity: 0.7;
+}
+
+.text-bold{
+	font-weight: bold;
+}
+
+.order-form{
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 1.25em;
+	margin: 0.625em auto;
+}
+
+.order-form input[type=text], select {
+	width: 100%;
+	padding: 0.75em 1.25em;
+	margin: 0.5em 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.btn-reset, .btn-place{
+	background-color: #171717;
+	color: white;
+	padding: 0.875em 1.25em;
+	margin: 0.5em 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.order-form input[type=submit] {
+	width: 100%;
+	background-color: #DC7D00;
+	color: white;
+	padding: 0.875em 1.25em;
+	margin: 0.5em 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.order-form input[type=submit]:hover {
+	background-color: #DC7D00;
+}
+
+.size-changer{
+	display: block;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 0.75em;
+	border: none;
+	outline: none;
+	background-color: lightgray;
+	color: black;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+.size-changer button{
+	background-color: #171717;
+	color: white;
+	padding: 4px 4px;
+	margin-left: 5px;
+	border: none;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+#total-price{
+	font-weight: bold;
+}
+
+#cart-views{
+	margin-top: 10px;
+	table-layout: auto;
+	width: 100%;
+}
+
+@keyframes fadein{
+    from{
+		opacity: 0; height: 0vh
+	}to{
+		opacity: 1;
+	}
+}
+#footer {
+	margin-top:181%;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 170px;
+   background-color: black;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   color: white;
+   text-align: center;
+   font-family: Helvetica;
+}
+			
+#footer a{
+	color:#add8e6;
+}
+
+#footer a:hover{
+	background-color:black;
+	color:yellow;
+}

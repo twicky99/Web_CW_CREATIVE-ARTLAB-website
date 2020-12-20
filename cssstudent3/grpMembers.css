@@ -1,0 +1,230 @@
+/* The logo of the navigation bar */
+#navbar #logo {
+	padding-left: 20px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width: 175px;
+	height: 75px;
+	transition: 0.4s;
+}
+
+/* the navigation bar */
+#navbar {
+	background-color: #333;
+	padding: 8px 7px;
+	transition: 0.4s;
+	width: 98.9%;
+	height: 15%; 
+	z-index: 99;
+	opacity: 0.9;
+}
+
+#navbar a {
+	float: left;
+	color: white;
+	text-align: 14px 16px;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#navbar a.active {
+	background-color:#20b2aa;
+	color:#ffffff;
+	border-radius: 15px;
+}
+#navbar a:hover {
+	background-color: #ddd;
+	border-radius: 15px;
+	color: black;
+}
+
+#navbar-right {
+	float: right;
+	padding-top: 10px;
+	padding-right: 20px;
+}	
+
+fieldset {
+	background-image: url("../pics/pageBackground.jpg");
+	background-repeat: no-repeat;
+	background-position: absolute;
+	background-size: 135%;
+	background-attachment: fixed;
+	border: 2px solid black;
+	border-radius: 5px;
+	color: #000000;				
+}
+
+.Intro {
+	text-align: center;
+	font-family: 'Caveat', cursive;
+	font-size: 48px;
+}
+		
+/* Student 1 */		
+	
+.student1 {
+	float:left;
+	width: 25%;
+}
+.stImage1 {
+	display: block;
+	width: 95%;
+	padding-left: 15px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+.imgHover1 {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 82.5%;
+	left: 14.5%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.container:hover .stImage1 {
+	opacity: 0.9;
+}
+.container:hover .imgHover1 {
+	opacity: 1;
+}
+.descText1 {
+	background-color: #ff80bf;
+	color: white;
+	font-size: 16px;
+	padding: 20px 38px;	
+}
+		
+/* Student 2 */		
+
+.student2 {
+	float:left;
+	width: 25%;
+}
+.stImage2 {
+	display: block;
+	width: 95%;
+	padding-left: 15px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+.imgHover2 {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 82.5%;
+	left: 38.4%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.container:hover .stImage2 {
+	opacity: 0.9;
+}
+.container:hover .imgHover2 {
+	opacity: 1;
+}
+.descText2 {
+	background-color: #ff80bf;
+	color: white;
+	font-size: 16px;
+	padding: 20px 16px;	
+}
+
+/* Student 3 */	
+	
+.student3 {
+	float:left;
+	width: 25%;
+}
+.stImage3 {
+	display: block;
+	width: 95%;
+	padding-left: 15px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+.imgHover3 {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 82.5%;
+	left: 63%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.container:hover .stImage3 {
+	opacity: 0.9;
+}
+.container:hover .imgHover3 {
+	opacity: 1;
+}
+.descText3 {
+	background-color: #ff80bf;
+	color: white;
+	font-size: 16px;
+	padding: 20px 38px;	
+}
+
+/* Student 4 */	
+
+.student4 {
+	float:left;
+	width: 25%;
+}
+.stImage4 {
+	display: block;
+	width: 95%;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+.imgHover4 {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 82.5%;
+	left: 85%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.container:hover .stImage4 {
+	opacity: 0.9;
+}
+.container:hover .imgHover4 {
+	opacity: 1;
+}
+.descText4 {
+	background-color: #ff80bf;
+	color: white;
+	font-size: 15px;
+	padding: 20px 20.3px;	
+}
+	
+/*the footer*/
+#footer {
+	width: 100%;
+	height: 145px;
+	background-color: #333;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	color: white;
+	text-align: center;
+	font-family: Helvetica;
+	opacity: 0.9;
+}
+#footer a{
+	color: white;
+	text-align: 10px 10px;
+	padding: 20px;
+	text-decoration: none;
+}		
+#footer a:hover{
+	background-color: #ddd;
+	border-radius: 15px;
+	color: black;
+}
